@@ -1,0 +1,41 @@
+# See: https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5-3rd-party-Hardware-specification
+
+menu.pnum=Board part number
+
+menu.xserial=U(S)ART support
+menu.usb=USB support (if available)
+menu.xusb=USB speed (if available)
+
+menu.opt=Optimize
+menu.rtlib=C Runtime Library
+menu.upload_method=Upload method
+menu.flash=Flash Memory Size
+menu.ram=RAM Size
+
+################################################################################
+
+# SnapDNA_F407VG board
+Disco.menu.pnum.SnapDNA_F407VG=STM32F407G-SnapDNA
+Disco.menu.pnum.SnapDNA_F407VG.node=DNA_F407VG
+Disco.menu.pnum.SnapDNA_F407VG.upload.maximum_size=1048576
+Disco.menu.pnum.SnapDNA_F407VG.upload.maximum_data_size=196608
+Disco.menu.pnum.SnapDNA_F407VG.build.mcu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard
+Disco.menu.pnum.SnapDNA_F407VG.build.board=SnapDNA_F407VG
+Disco.menu.pnum.SnapDNA_F407VG.build.series=STM32F4xx
+Disco.menu.pnum.SnapDNA_F407VG.build.product_line=STM32F407xx
+Disco.menu.pnum.SnapDNA_F407VG.build.variant=SnapDNA_F407VG
+Disco.menu.pnum.SnapDNA_F407VG.build.cmsis_lib_gcc=arm_cortexM4l_math
+
+
+
+# Upload menu
+Disco.menu.upload_method.MassStorage=Mass Storage
+Disco.menu.upload_method.MassStorage.upload.protocol=
+Disco.menu.upload_method.MassStorage.upload.tool=massStorageCopy
+
+Disco.menu.upload_method.STLink=STLink
+Disco.menu.upload_method.STLink.upload.protocol=STLink
+Disco.menu.upload_method.STLink.upload.tool=stlink_upload
+
+################################################################################
+
